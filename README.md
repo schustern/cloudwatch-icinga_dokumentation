@@ -1,4 +1,4 @@
-## Welcome to GitHub Pages
+## AWS Monitoring with Icinga using AWS Cloudwatch
 
 You can use the [editor on GitHub](https://github.com/schustern/cloudwatch-icinga_dokumentation/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
