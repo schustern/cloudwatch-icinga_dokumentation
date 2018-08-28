@@ -2,12 +2,13 @@
 
 #### Installation
 For the plugin to access and receive the data from AWS Cloudwatch, it has to be installed the AWS Command Line Interface (CLI). The AWS CLI is an open source tool built on top of the AWS SDK for Python (Boto) that provides commands for interacting with AWS services. 
-> Therefore: a proper version of **Python** is required to be instaled on the System running the Icinga deamon.
-
+Therefore: a proper version of **Python** is required to be instaled on the System running the Icinga deamon.
+***
 If you already have **pip** and a supported version of Python, you can install the AWS CLI with the following command:
 ```bash
 $ pip install awscli --upgrade --user
 ```
+The *--upgrade* option tells pip to upgrade any requirements that are already installed. The *--user* option tells pip to install the program to a subdirectory of your user directory to avoid modifying libraries used by your operating system.
 ```bash
 # Generic cloudwatch_check
 # $ARG1$: Metric
@@ -44,15 +45,4 @@ define service {
         check_command               check_aws_vpn_connection!TunnelState!Average!VpnId!vpn-09804c9a8456da7ac!@0.5:0.99!0.4:~
 }
 ```
-
-- [x] this is a complete item
-- [ ] this is an incomplete item
-- [x] @mentions, #refs, [links](),
-**formatting**, and <del>tags</del>
-supported
-- [x] list syntax required (any
-unordered or ordered list
-supported)
-
-
 
